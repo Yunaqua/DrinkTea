@@ -24,7 +24,7 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 3em;
     padding: 0;
     background-color: $color-secondary;
 }
@@ -46,8 +46,6 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
-    display: flex;
-    justify-content: center;
     h1{
         margin: 0;
     }
@@ -66,7 +64,12 @@ h2{
     height: 50px;
     padding: 0;
     margin: 0;
-    display: inline-block;
+    align-items: center;
+    .inline{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     li {
         height: auto;
         width: 135.8px;
@@ -93,6 +96,10 @@ h2{
       }
   }
 
+  .col-md-8.navigation {
+    display: flex;
+}
+
 nav ul {
     padding: 0;
     display: flex;
@@ -108,7 +115,64 @@ nav ul {
     }
 }
 
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.search-txt {
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: white;
+    width: 0;
+    position: absolute;
+    transition: width 0.4s ease-in-out;
+    cursor: pointer;
+    opacity: 0;
+}
 
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-txt {
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: white;
+    width: 0;
+    position: absolute;
+    right: 40px; /* Ajuster en fonction de la taille de votre icône de recherche */
+    transition: width 0.4s ease-in-out, opacity 0.2s;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1;
+}
+
+.search-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-container:hover .search-txt,
+.search-container:focus-within .search-txt {
+    width: 200px;
+    opacity: 1;
+}
+
+.content-to-move {
+    transition: transform 0.4s ease-in-out;
+}
+
+.search-container:hover .content-to-move,
+.search-container:focus-within .content-to-move {
+    transform: translateX(-200px); /* Décaler la div de la largeur de l'input vers la gauche */
+}
 
 section {
     padding: 20px;
@@ -200,6 +264,11 @@ footer {
 .carrousel .boisson img {
     width: 100%; /* Ajustez cette valeur au besoin */
     height: auto; /* Pour conserver les proportions */
+}
+
+.icon{
+    height: 20px;
+    padding: 25px;
 }
 
 button.prev,
