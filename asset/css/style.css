@@ -1,4 +1,14 @@
 @charset "UTF-8";
+/****  Fonts    ****/
+h1, h2 {
+  font-family: Merienda, sans-serif;
+}
+
+/****  Fonts    ****/
+h1, h2 {
+  font-family: Merienda, sans-serif;
+}
+
 /* Commandes
 npm install -g sass 
 npm run sass
@@ -163,7 +173,7 @@ nav ul li a {
 }
 
 section {
-  padding: 20px;
+  padding: 20px 0;
   position: relative;
 }
 
@@ -171,6 +181,26 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.row.about {
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.detail-box {
+  max-width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.detail-box a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #5b2b0f;
 }
 
 .boisson {
@@ -202,6 +232,10 @@ div .boisson-image img {
   max-width: 400px;
   height: auto;
   border-radius: 30px;
+}
+
+img.banniere {
+  position: absolute;
 }
 
 .boisson-info {
@@ -251,6 +285,17 @@ footer {
 .icon {
   height: 20px;
   padding: 25px;
+}
+
+.landing-image {
+  /* height: 200px; */
+  width: -webkit-fill-available;
+  height: 410px;
+}
+
+.accueil {
+  display: flex;
+  align-items: center;
 }
 
 button.prev,

@@ -175,7 +175,7 @@ nav ul {
 }
 
 section {
-    padding: 20px;
+    padding: 20px 0;
     position: relative;
 }
 
@@ -185,6 +185,25 @@ section {
     justify-content: space-evenly;
 }
 
+.row.about {
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+}
+.detail-box{
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+        color: #5b2b0f;
+    }
+
+}
 
 .boisson {
     background-color: #fff;
@@ -218,7 +237,9 @@ div{
 
 }
 
-
+img.banniere {
+    position: absolute;
+}
 .boisson-info {
     padding: 1em;
 }
@@ -269,6 +290,20 @@ footer {
 .icon{
     height: 20px;
     padding: 25px;
+}
+
+
+    .landing-image {
+    /* height: 200px; */
+    width: -webkit-fill-available;
+    height: 410px;
+    }
+
+
+
+.accueil {
+    display: flex;
+    align-items: center;
 }
 
 button.prev,

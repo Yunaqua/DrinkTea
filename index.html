@@ -14,7 +14,12 @@
    
         <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-</head>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    </head>
 <body>
     <!--<header>
         <img class="logo"src="asset/image/DrinkDlogo.png" alt="Logo Drink Dream">
@@ -36,7 +41,8 @@
     <header class="header_section">
         <div class="navbar">
           <nav class="navbar inline">
-            <div class="col-md-4">
+            <div class="col-md-4 accueil">
+              <img class="logo"src="asset/image/Logo/DrinkDlogo.png" alt="Logo Drink Dream">
                 <a class="navbar-brand" href="index.html">
                     Dream Drink
                   </a>
@@ -75,6 +81,43 @@
       </header>
   
   <div class="content">
+    <section>
+      <div>
+        <img src="asset/image/chocolat3.jpg" class="landing-image">
+        <img class="banniere" src="asset/image/cake-coffee.png">
+      </div>
+    </section> <!-- Image-->
+
+    <section class="about_section layout_padding ">
+      <div class="container">
+        <div class="row about">
+          <div class="col-md-6">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>
+                  About Our Company
+                </h2>
+              </div>
+              <p>
+                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web pagend web page editors now use Lorem Ipsum as their default model text, </p>
+              <a href="#">
+                <span>
+                  Read More
+                </span>
+                <img src="asset/image/color-arrow.png" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="img-box">
+              <img src="asset/image/cafe-nobcgd.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- Présentation-->
+
     <section id="nos-boissons-caroussel">
         <h2>Nouveautés</h2>
         <div id="carrousel"  class="carrousel">
@@ -99,22 +142,23 @@
                 <p>Prix: 6,50€</p></div>
             </div>
             <div class="boisson-all">
-                <div class="boisson-image"><img src="asset/image/machaglace.png" alt="Boisson 1"></div>
+                <div class="boisson-image"><img src="asset/image/machaglace.png" alt="Boisson 2"></div>
                 <div class="boisson-info"><h3>Matcha glaçé</h3>
                 <p>Description de la boisson 1.</p>
                 <p>Prix: 6€</p></div>
             </div>
             <div class="boisson-all">
-                <img src="asset/image/affogato.png" alt="Boisson 2">
-                <h3>Affogato</h3>
+              <div class="boisson-image"><img src="asset/image/affogato.png" alt="Boisson 3"></div>
+              <div class="boisson-info"><h3>Affogato</h3>
                 <p>Description de la boisson 2.</p>
-                <p>Prix: 7€</p>
+                <p>Prix: 7€</p></div>
             </div>
         </div>
         
         <!-- Ajoutez plus de boissons ici -->
     </section>
  </div> <!--content -->
+
     <footer id="contact">
         <h2>Contactez-nous</h2>
         <p>Email: contact@ma-boutique.com</p>
