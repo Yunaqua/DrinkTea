@@ -71,7 +71,7 @@
               <div class="search-box">
                 <input type="text" class="search-txt" placeholder="Rechercher...">
                   <a class="search-btn" href="#">
-                      <img src="asset/image/Logo/search.png" class="icon" alt="Rechercher" /> <!-- Assurez-vous que le chemin vers l'icône est correct -->
+                      <img src="asset/image/Logo/search.png" class="icon" alt="Rechercher" /> 
                   </a>
             </div>
               
@@ -119,12 +119,12 @@
     </section> <!-- Présentation-->
 
     <section id="nos-boissons-caroussel">
-        <h2>Nouveautés</h2>
+      <div class="titre"><h2>Nouveautés</h2></div>
         <div id="carrousel"  class="carrousel">
             <div class="carrousel-items">
-                <div class="boisson"><img src="asset/image/pumpkinsl.png" alt="Boisson 1"><h3>Boisson 1</h3></div>
-                <div class="boisson"><img src="asset/image/mojitokiwi.png" alt="Boisson 2"><h3>Boisson 2</h3></div>
-               <div class="boisson"><img src="asset/image/caferose.png" alt="Boisson 3"><h3>Boisson 3</h3></div>
+                <div class="boisson"><img src="asset/image/pumpkinsl.png" alt="Boisson 1"><h3>Pumpkin spice latte</h3></div>
+                <div class="boisson"><img src="asset/image/mojitokiwi.png" alt="Boisson 2"><h3>Mojito kiwi</h3></div>
+               <div class="boisson"><img src="asset/image/caferose.png" alt="Boisson 3"><h3>Pink coffee</h3></div>
                 <!-- Ajoutez plus de boissons ici -->
             </div>
       <button class="prev" onclick="moveSlide(-1)" id="prevBtn">&#10094;</button>
@@ -133,31 +133,79 @@
         <!-- Ajoutez plus de boissons ici -->
     </section>
   <section id="nos-boissons">
-        <h2>Nos Boissons Incontournables</h2>
+    <div class="titre"><h2>Nos Boissons Incontournables</h2></div>
         <div class="affichage-boisson"> 
             <div class="boisson-all">
                 <div class="boisson-image"><img src="asset/image/boba.png" alt="Boisson 1"></div>
                 <div class="boisson-info"><h3>Boba</h3>
-                <p>Description de la boisson 1.</p>
+                <p>Venez découvrir nos délicieux bubble teas et laissez-vous surprendre par cette boisson unique qui saura ravir vos papilles et égayer votre journée.</p>
                 <p>Prix: 6,50€</p></div>
             </div>
             <div class="boisson-all">
                 <div class="boisson-image"><img src="asset/image/machaglace.png" alt="Boisson 2"></div>
                 <div class="boisson-info"><h3>Matcha glaçé</h3>
-                <p>Description de la boisson 1.</p>
+                <p>Le Matcha Latte est une boisson raffinée et énergisante qui marie la richesse du thé vert matcha avec la douceur crémeuse du lait, une véritable invitation à la détente et à la revitalisation.</p>
                 <p>Prix: 6€</p></div>
             </div>
             <div class="boisson-all">
               <div class="boisson-image"><img src="asset/image/affogato.png" alt="Boisson 3"></div>
               <div class="boisson-info"><h3>Affogato</h3>
-                <p>Description de la boisson 2.</p>
+                <p>L'Affogato, un dessert classique italien, combine à merveille la chaleur intense de l'espresso avec la douceur froide de la glace vanille.</p>
                 <p>Prix: 7€</p></div>
             </div>
         </div>
         
         <!-- Ajoutez plus de boissons ici -->
     </section>
+
+    <section id="testimonial">
+      <div class="titre"><h2>Témoignage</h2></div>
+
+      <div id="carrousel"  class="carrousel">
+        <div class="carrousel-items">
+          <div class="avisposter">
+            <div>
+              <img class="notes" src="asset/image/5etoiles.png" alt="note 5 étoiles">
+              <h3>Notre petit moment après le boulot</h3>
+              <p>J'adore</p>
+              <p>Nom Prenom</p>
+            </div>
+            <img class="commentaires" src="asset/image/crop-women-sitting-cafe.jpg" alt="avis1">
+            
+          </div>
+
+          <div class="avisposter">
+            <div>
+              <img class="notes" src="asset/image/4-5etoiles.png" alt="note 4.5 étoiles">
+              <h3>On y retourne !</h3>
+              <p>On a prit des smoothies avec ma meilleure amie et on adoré</p>
+              <p>Nom Prenom</p>
+            </div>
+            <img class="commentaires" src="asset/image/close-up-person-drinking-juice.jpg" alt="avis2">
+            
+          </div>
+
+          <div class="avisposter">
+            <div>
+              <img class="notes" src="asset/image/5etoiles.png" alt="note 4.5 étoiles">
+              <h3>Matcha très bon</h3>
+              <p>J'ai adoré le matcha ! Le goût est leger et la boisson est très onctueuse , un vrai délice !</p>
+              <p>Nom Prenom</p>
+            </div>
+            <img class="commentaires" src="asset/image/man-drinking-matcha-tea.jpg" alt="avis3">
+            
+          </div>
+
+           
+        </div>
+  <button class="prev" onclick="moveSlide(-1)" id="prevBtn">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)" id="nextBtn">&#10095;</button>
+      
+    </section> <!--avis -->
  </div> <!--content -->
+
+ <!-- Bouton de retour en haut -->
+<button onclick="topFunction()" id="scrollTopBtn" title="Retour en haut">&#8679;</button>
 
     <footer id="contact">
         <h2>Contactez-nous</h2>
